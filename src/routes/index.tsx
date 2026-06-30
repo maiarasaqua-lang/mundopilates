@@ -70,8 +70,8 @@ function Index() {
       <PurchaseNotifications />
 
       {/* Top urgency bar */}
-      <div className="w-full bg-[var(--gradient-primary)] text-primary-foreground">
-        <div className="mx-auto max-w-6xl px-4 py-2.5 text-center text-xs sm:text-sm font-semibold tracking-wide">
+      <div className="w-full text-white" style={{ background: "var(--gradient-primary)" }}>
+        <div className="mx-auto max-w-6xl px-4 py-2.5 text-center text-xs sm:text-sm font-bold tracking-wide">
           ⏰ Oferta Válida Apenas Hoje! — {today}
         </div>
       </div>
@@ -94,7 +94,7 @@ function Index() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <button
                 onClick={scrollToOffer}
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-primary)] px-8 py-4 text-base font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-[1.02] active:scale-100"
+                className="btn-cta btn-cta-hover group inline-flex items-center justify-center gap-2 px-8 py-4 text-base"
               >
                 EU QUERO
                 <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -131,9 +131,9 @@ function Index() {
             {SEQ_IMAGES.map((src, i) => (
               <div
                 key={i}
-                className="overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-card)] transition-transform hover:-translate-y-1"
+                className="overflow-hidden rounded-2xl border border-border bg-white shadow-[var(--shadow-card)] transition-transform hover:-translate-y-1 flex items-center justify-center p-2"
               >
-                <img src={src} alt={`Sequência ${i + 1}`} className="aspect-[3/4] w-full object-cover" loading="lazy" />
+                <img src={src} alt={`Sequência ${i + 1}`} className="w-full h-auto object-contain" loading="lazy" />
               </div>
             ))}
           </div>
