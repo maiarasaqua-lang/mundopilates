@@ -94,6 +94,8 @@
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-glow));
   --shadow-soft: 0 10px 40px -10px color-mix(in oklab, var(--primary) 25%, transparent);
   --shadow-card: 0 4px 24px -8px oklch(0.3 0.05 20 / 0.12);
+  --gradient-cta: linear-gradient(135deg, oklch(0.7 0.2 145), oklch(0.62 0.22 150));
+  --shadow-cta: 0 10px 30px -8px oklch(0.62 0.22 150 / 0.55);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -158,4 +160,29 @@
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
+}
+
+@keyframes cta-pulse {
+  0%, 100% {
+    box-shadow: 0 10px 30px -8px oklch(0.62 0.22 150 / 0.55), 0 0 0 0 oklch(0.62 0.22 150 / 0.55);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 14px 36px -8px oklch(0.62 0.22 150 / 0.7), 0 0 0 12px oklch(0.62 0.22 150 / 0);
+    transform: scale(1.02);
+  }
+}
+
+@utility btn-cta {
+  background: var(--gradient-cta);
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  border-radius: 9999px;
+  box-shadow: var(--shadow-cta);
+  animation: cta-pulse 2s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+@utility btn-cta-hover {
+  &:hover { transform: scale(1.04); }
 }

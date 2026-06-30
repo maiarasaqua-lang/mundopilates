@@ -70,8 +70,8 @@ function Index() {
       <PurchaseNotifications />
 
       {/* Top urgency bar */}
-      <div className="w-full bg-[var(--gradient-primary)] text-primary-foreground">
-        <div className="mx-auto max-w-6xl px-4 py-2.5 text-center text-xs sm:text-sm font-semibold tracking-wide">
+      <div className="w-full text-white" style={{ background: "var(--gradient-primary)" }}>
+        <div className="mx-auto max-w-6xl px-4 py-2.5 text-center text-xs sm:text-sm font-bold tracking-wide">
           ⏰ Oferta Válida Apenas Hoje! — {today}
         </div>
       </div>
@@ -94,7 +94,7 @@ function Index() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <button
                 onClick={scrollToOffer}
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-primary)] px-8 py-4 text-base font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-[1.02] active:scale-100"
+                className="btn-cta btn-cta-hover group inline-flex items-center justify-center gap-2 px-8 py-4 text-base"
               >
                 EU QUERO
                 <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -131,9 +131,9 @@ function Index() {
             {SEQ_IMAGES.map((src, i) => (
               <div
                 key={i}
-                className="overflow-hidden rounded-2xl border border-border bg-background shadow-[var(--shadow-card)] transition-transform hover:-translate-y-1"
+                className="overflow-hidden rounded-2xl border border-border bg-white shadow-[var(--shadow-card)] transition-transform hover:-translate-y-1 flex items-center justify-center p-2"
               >
-                <img src={src} alt={`Sequência ${i + 1}`} className="aspect-[3/4] w-full object-cover" loading="lazy" />
+                <img src={src} alt={`Sequência ${i + 1}`} className="w-full h-auto object-contain" loading="lazy" />
               </div>
             ))}
           </div>
@@ -208,12 +208,12 @@ function Index() {
               { n: "2", t: "Acesse pelo e-mail", d: "Você recebe o link de acesso direto no seu e-mail." },
               { n: "3", t: "Use na próxima aula", d: "Baixe o PDF, escolha a sequência pelo objetivo do dia e aplique respeitando o nível e as necessidades de cada aluna." },
             ].map((s) => (
-              <div key={s.n} className="rounded-2xl border border-border bg-card p-6 text-center shadow-[var(--shadow-card)]">
-                <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-[var(--gradient-primary)] text-lg font-bold text-primary-foreground">
+              <div key={s.n} className="rounded-2xl border border-border bg-card p-8 text-center shadow-[var(--shadow-card)]">
+                <div className="mx-auto grid h-14 w-14 place-items-center rounded-full text-xl font-bold text-white" style={{ background: "var(--gradient-primary)" }}>
                   {s.n}
                 </div>
-                <h3 className="mt-4 text-lg font-bold">{s.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
+                <h3 className="mt-5 text-lg font-bold text-foreground">{s.t}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
               </div>
             ))}
           </div>
@@ -240,8 +240,8 @@ function Index() {
               <div className="mt-6">
                 <p className="text-sm text-muted-foreground line-through">De R$ 47</p>
                 <p className="mt-1 text-sm text-muted-foreground">por apenas</p>
-                <p className="mt-1 text-5xl font-extrabold tracking-tight">
-                  R$ <span className="text-primary">9,90</span>
+                <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">
+                  R$ 9,90
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
@@ -254,16 +254,16 @@ function Index() {
               </ul>
               <a
                 href="https://pay.lowify.com.br/checkout.php?product_id=BDNqp0"
-                className="mt-8 inline-flex items-center justify-center rounded-full border-2 border-primary px-6 py-3.5 text-base font-bold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+                className="btn-cta btn-cta-hover mt-8 inline-flex items-center justify-center px-6 py-4 text-base"
               >
-                COMPRAR AGORA
+                COMPRAR AGORA →
               </a>
               <p className="mt-3 text-center text-xs text-muted-foreground">✅ Acesso imediato após a compra</p>
             </div>
 
             {/* Plano Completo */}
             <div className="relative flex flex-col rounded-3xl border-2 border-primary bg-card p-8 shadow-[var(--shadow-soft)]">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[var(--gradient-primary)] px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary-foreground">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white shadow-md" style={{ background: "var(--gradient-primary)" }}>
                 ⭐ Mais Escolhido
               </span>
               <h3 className="text-xl font-bold">Plano Completo</h3>
@@ -271,8 +271,8 @@ function Index() {
               <div className="mt-6">
                 <p className="text-sm text-muted-foreground line-through">De R$ 97</p>
                 <p className="mt-1 text-sm text-muted-foreground">por apenas</p>
-                <p className="mt-1 text-5xl font-extrabold tracking-tight">
-                  R$ <span className="text-primary">17,90</span>
+                <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">
+                  R$ 17,90
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
@@ -285,7 +285,7 @@ function Index() {
               </ul>
               <a
                 href="https://pay.lowify.com.br/go.php?offer=8k4r0ef"
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-primary)] px-6 py-3.5 text-base font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-[1.02]"
+                className="btn-cta btn-cta-hover mt-8 inline-flex items-center justify-center gap-2 px-6 py-4 text-base"
               >
                 QUERO AGORA <span>→</span>
               </a>
@@ -331,7 +331,7 @@ function Index() {
           <div className="mt-10 text-center">
             <button
               onClick={scrollToOffer}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-primary)] px-8 py-4 text-base font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:scale-[1.02]"
+              className="btn-cta btn-cta-hover inline-flex items-center justify-center gap-2 px-8 py-4 text-base"
             >
               QUERO MEU KIT AGORA →
             </button>
