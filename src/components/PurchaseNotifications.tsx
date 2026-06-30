@@ -41,8 +41,8 @@ export function PurchaseNotifications() {
         visible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0 pointer-events-none"
       }`}
     >
-      <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-3 shadow-[var(--shadow-card)]">
-        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[var(--gradient-primary)] text-primary-foreground font-bold">
+      <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-3 shadow-lg ring-1 ring-black/5">
+        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full text-white font-bold" style={{ background: "var(--gradient-primary)" }}>
           {item.name.charAt(0)}
         </div>
         <div className="min-w-0 flex-1">
