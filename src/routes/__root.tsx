@@ -80,10 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Kit Instrutora de Pilates — 150 Sequências Prontas" },
       { name: "description", content: "150 sequências de Pilates prontas para aplicar em aula. Variar atendimentos e conduzir práticas organizadas, fluidas e profissionais." },
       { property: "og:title", content: "Kit Instrutora de Pilates — 150 Sequências Prontas" },
-      { property: "og:description", content: "150 sequências prontas para aplicar em aula sem precisar montar tudo do zero." },
+      { property: "og:description", content: "150 sequências de Pilates prontas para aplicar em aula. Variar atendimentos e conduzir práticas organizadas, fluidas e profissionais." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Kit Instrutora de Pilates — 150 Sequências Prontas" },
+      { name: "twitter:description", content: "150 sequências de Pilates prontas para aplicar em aula. Variar atendimentos e conduzir práticas organizadas, fluidas e profissionais." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f6b580ac-10b8-4773-b084-173385002a0a/id-preview-a8ea7a38--35431329-4b82-43a0-94a3-74987dbd3e6d.lovable.app-1782779969676.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f6b580ac-10b8-4773-b084-173385002a0a/id-preview-a8ea7a38--35431329-4b82-43a0-94a3-74987dbd3e6d.lovable.app-1782779969676.png" },
     ],
     links: [
       {
