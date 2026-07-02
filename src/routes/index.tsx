@@ -109,7 +109,7 @@ function Index() {
             <div className="relative mx-auto max-w-md">
               <div className="absolute -inset-4 rounded-3xl bg-[var(--gradient-primary)] opacity-20 blur-3xl" />
               <img
-                src="https://i.postimg.cc/BZwVkcCb/img-produto.png"
+                src="https://i.postimg.cc/VvcNNFrn/KITPRO.png"
                 alt="Kit Pilates Pro — 250 sequências prontas"
                 className="relative w-full drop-shadow-2xl"
               />
