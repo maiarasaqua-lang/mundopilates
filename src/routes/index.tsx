@@ -241,7 +241,7 @@ function Index() {
                 <p className="text-sm text-muted-foreground line-through">De R$ 47</p>
                 <p className="mt-1 text-sm text-muted-foreground">por apenas</p>
                 <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">
-                  R$ 9,90
+                  R$ 10
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
