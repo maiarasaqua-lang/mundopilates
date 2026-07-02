@@ -5,10 +5,10 @@ import { PurchaseNotifications } from "@/components/PurchaseNotifications";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Kit Instrutora de Pilates — 150 Sequências Prontas" },
-      { name: "description", content: "150 sequências de Pilates prontas para variar suas aulas e conduzir práticas mais organizadas, fluidas e profissionais." },
-      { property: "og:title", content: "Kit Instrutora de Pilates — 150 Sequências Prontas" },
-      { property: "og:description", content: "150 sequências prontas para aplicar em aula sem precisar montar tudo do zero." },
+      { title: "Kit Pilates Pro — 250 Sequências Prontas" },
+      { name: "description", content: "250 sequências de Pilates prontas para variar suas aulas e conduzir práticas mais organizadas, fluidas e profissionais." },
+      { property: "og:title", content: "Kit Pilates Pro — 250 Sequências Prontas" },
+      { property: "og:description", content: "250 sequências prontas para aplicar em aula sem precisar montar tudo do zero." },
       { property: "og:image", content: "https://i.postimg.cc/BZwVkcCb/img-produto.png" },
     ],
   }),
@@ -81,14 +81,14 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:py-20 lg:grid-cols-2 lg:items-center">
           <div className="order-2 lg:order-1">
             <span className="inline-block rounded-full border border-primary/30 bg-card/80 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary backdrop-blur">
-              Kit Instrutora de Pilates
+              Kit Pilates Pro
             </span>
             <h1 className="mt-5 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
               Suas aulas de Pilates nunca mais vão parecer{" "}
               <span className="text-primary italic">repetitivas</span>
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              <strong className="text-foreground">150 sequências prontas</strong> para aplicar em aula, variar seus atendimentos e conduzir práticas mais organizadas, fluidas e profissionais — sem precisar montar tudo do zero.
+              <strong className="text-foreground">250 sequências prontas</strong> para aplicar em aula, variar seus atendimentos e conduzir práticas mais organizadas, fluidas e profissionais — sem precisar montar tudo do zero.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -110,7 +110,7 @@ function Index() {
               <div className="absolute -inset-4 rounded-3xl bg-[var(--gradient-primary)] opacity-20 blur-3xl" />
               <img
                 src="https://i.postimg.cc/BZwVkcCb/img-produto.png"
-                alt="Kit Instrutora de Pilates — 150 sequências prontas"
+                alt="Kit Pilates Pro — 250 sequências prontas"
                 className="relative w-full drop-shadow-2xl"
               />
             </div>
@@ -276,7 +276,7 @@ function Index() {
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
-                {["150 Sequências de Pilates","Calendário de Aulas 30 Dias","30 Sequências de Alongamento","Checklist \"Aula que Fideliza\"","Ficha de Evolução da Aluna","Garantia estendida de 14 dias"].map((f) => (
+                {["250 Sequências de Pilates","Calendário de Aulas 30 Dias","30 Sequências de Alongamento","Checklist \"Aula que Fideliza\"","Ficha de Evolução da Aluna","Garantia estendida de 14 dias"].map((f) => (
                   <li key={f} className="flex items-start gap-2">
                     <span className="mt-0.5 text-success">✅</span>
                     <span>{f}</span>
@@ -342,7 +342,7 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border bg-background py-8">
         <div className="mx-auto max-w-6xl px-4 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Kit Instrutora de Pilates. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Kit Pilates Pro. Todos os direitos reservados.</p>
           <p className="mt-2">Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como garantia de resultados.</p>
         </div>
       </footer>
