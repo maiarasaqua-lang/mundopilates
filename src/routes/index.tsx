@@ -5,10 +5,10 @@ import { PurchaseNotifications } from "@/components/PurchaseNotifications";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Kit Instrutora de Pilates — 150 Sequências Prontas" },
-      { name: "description", content: "150 sequências de Pilates prontas para variar suas aulas e conduzir práticas mais organizadas, fluidas e profissionais." },
-      { property: "og:title", content: "Kit Instrutora de Pilates — 150 Sequências Prontas" },
-      { property: "og:description", content: "150 sequências prontas para aplicar em aula sem precisar montar tudo do zero." },
+      { title: "Kit Pilates Pro — 250 Sequências Prontas" },
+      { name: "description", content: "250 sequências de Pilates prontas para variar suas aulas e conduzir práticas mais organizadas, fluidas e profissionais." },
+      { property: "og:title", content: "Kit Pilates Pro — 250 Sequências Prontas" },
+      { property: "og:description", content: "250 sequências prontas para aplicar em aula sem precisar montar tudo do zero." },
       { property: "og:image", content: "https://i.postimg.cc/BZwVkcCb/img-produto.png" },
     ],
   }),
