@@ -109,7 +109,7 @@ function Index() {
             <div className="relative mx-auto max-w-md">
               <div className="absolute -inset-4 rounded-3xl bg-[var(--gradient-primary)] opacity-20 blur-3xl" />
               <img
-                src="https://i.postimg.cc/BZwVkcCb/img-produto.png"
+                src="https://i.postimg.cc/VvcNNFrn/KITPRO.png"
                 alt="Kit Pilates Pro — 250 sequências prontas"
                 className="relative w-full drop-shadow-2xl"
               />
@@ -241,7 +241,7 @@ function Index() {
                 <p className="text-sm text-muted-foreground line-through">De R$ 47</p>
                 <p className="mt-1 text-sm text-muted-foreground">por apenas</p>
                 <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">
-                  R$ 9,90
+                  R$ 10
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
