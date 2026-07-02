@@ -276,7 +276,7 @@ function Index() {
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
-                {["150 Sequências de Pilates","Calendário de Aulas 30 Dias","30 Sequências de Alongamento","Checklist \"Aula que Fideliza\"","Ficha de Evolução da Aluna","Garantia estendida de 14 dias"].map((f) => (
+                {["250 Sequências de Pilates","Calendário de Aulas 30 Dias","30 Sequências de Alongamento","Checklist \"Aula que Fideliza\"","Ficha de Evolução da Aluna","Garantia estendida de 14 dias"].map((f) => (
                   <li key={f} className="flex items-start gap-2">
                     <span className="mt-0.5 text-success">✅</span>
                     <span>{f}</span>
@@ -342,7 +342,7 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border bg-background py-8">
         <div className="mx-auto max-w-6xl px-4 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Kit Instrutora de Pilates. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Kit Pilates Pro. Todos os direitos reservados.</p>
           <p className="mt-2">Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como garantia de resultados.</p>
         </div>
       </footer>
