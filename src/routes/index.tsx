@@ -253,7 +253,7 @@ function Index() {
                 ))}
               </ul>
               <a
-                href="https://pay.lowify.com.br/checkout.php?product_id=BDNqp0"
+                href="https://pay.wiapy.com/kIVHV3ugtNl"
                 className="btn-cta btn-cta-hover mt-8 inline-flex items-center justify-center px-6 py-4 text-base"
               >
                 COMPRAR AGORA →
@@ -272,7 +272,7 @@ function Index() {
                 <p className="text-sm text-muted-foreground line-through">De R$ 97</p>
                 <p className="mt-1 text-sm text-muted-foreground">por apenas</p>
                 <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">
-                  R$ 17,90
+                  R$ 19,90
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
@@ -284,7 +284,7 @@ function Index() {
                 ))}
               </ul>
               <a
-                href="https://pay.lowify.com.br/go.php?offer=8k4r0ef"
+                href="https://pay.wiapy.com/HsotDZEoLq"
                 className="btn-cta btn-cta-hover mt-8 inline-flex items-center justify-center gap-2 px-6 py-4 text-base"
               >
                 QUERO AGORA <span>→</span>
