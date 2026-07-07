@@ -55,6 +55,7 @@ function formatDateBR(d: Date) {
 function Index() {
   const [today, setToday] = useState("");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [showUpsell, setShowUpsell] = useState(false);
   const offerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -68,6 +69,66 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <PurchaseNotifications />
+
+      {showUpsell && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4" onClick={() => setShowUpsell(false)}>
+          <div
+            className="relative w-full max-w-lg rounded-3xl bg-card p-6 sm:p-8 shadow-2xl border-2 border-primary max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowUpsell(false)}
+              aria-label="Fechar"
+              className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-full bg-muted text-foreground hover:bg-muted/80"
+            >
+              ✕
+            </button>
+            <div className="text-center">
+              <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">
+                🎉 Você foi selecionada!
+              </span>
+              <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
+                Oferta especial só para você
+              </h3>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Leve o <strong className="text-foreground">Plano Completo</strong> com <strong className="text-foreground">todos os bônus</strong> por um valor exclusivo, só liberado agora:
+              </p>
+              <div className="mt-5">
+                <p className="text-sm text-muted-foreground line-through">De R$ 27,90</p>
+                <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">R$ 19,90</p>
+              </div>
+              <ul className="mt-5 space-y-2 text-left text-sm mx-auto max-w-sm">
+                {[
+                  "250 Sequências de Pilates",
+                  "Calendário de Aulas 30 Dias",
+                  "30 Sequências de Alongamento",
+                  "Checklist \"Aula que Fideliza\"",
+                  "Ficha de Evolução da Aluna",
+                  "Garantia estendida de 14 dias",
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-2">
+                    <span className="mt-0.5 text-success">✅</span>
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://pay.wiapy.com/M1WXhreq8nt"
+                className="btn-cta btn-cta-hover mt-6 inline-flex w-full items-center justify-center gap-2 px-6 py-4 text-base"
+              >
+                QUERO O PLANO COMPLETO POR R$ 19,90 →
+              </a>
+              <a
+                href="https://pay.wiapy.com/kIVHV3ugtNl"
+                className="mt-3 inline-block text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
+                onClick={() => setShowUpsell(false)}
+              >
+                Não, prefiro continuar com o Plano Básico
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Top urgency bar */}
       <div className="w-full text-white" style={{ background: "var(--gradient-primary)" }}>
@@ -252,12 +313,13 @@ function Index() {
                   </li>
                 ))}
               </ul>
-              <a
-                href="https://pay.wiapy.com/kIVHV3ugtNl"
+              <button
+                type="button"
+                onClick={() => setShowUpsell(true)}
                 className="btn-cta btn-cta-hover mt-8 inline-flex items-center justify-center px-6 py-4 text-base"
               >
                 COMPRAR AGORA →
-              </a>
+              </button>
               <p className="mt-3 text-center text-xs text-muted-foreground">✅ Acesso imediato após a compra</p>
             </div>
 
@@ -269,10 +331,9 @@ function Index() {
               <h3 className="text-xl font-bold">Plano Completo</h3>
               <p className="mt-1 text-sm text-muted-foreground">Para transformar suas aulas todos os dias</p>
               <div className="mt-6">
-                <p className="text-sm text-muted-foreground line-through">De R$ 97</p>
                 <p className="mt-1 text-sm text-muted-foreground">por apenas</p>
                 <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">
-                  R$ 19,90
+                  R$ 27,90
                 </p>
               </div>
               <ul className="mt-6 space-y-3 text-sm">
