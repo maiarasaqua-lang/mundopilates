@@ -331,6 +331,7 @@ function Index() {
               <h3 className="text-xl font-bold">Plano Completo</h3>
               <p className="mt-1 text-sm text-muted-foreground">Para transformar suas aulas todos os dias</p>
               <div className="mt-6">
+                <p className="text-sm text-muted-foreground line-through">De R$ 97</p>
                 <p className="mt-1 text-sm text-muted-foreground">por apenas</p>
                 <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">
                   R$ 27,90
