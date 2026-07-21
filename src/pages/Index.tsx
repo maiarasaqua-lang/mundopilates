@@ -1,19 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { PurchaseNotifications } from "@/components/PurchaseNotifications";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Kit Pilates Pro — 250 Sequências Prontas" },
-      { name: "description", content: "250 sequências de Pilates prontas para variar suas aulas e conduzir práticas mais organizadas, fluidas e profissionais." },
-      { property: "og:title", content: "Kit Pilates Pro — 250 Sequências Prontas" },
-      { property: "og:description", content: "250 sequências prontas para aplicar em aula sem precisar montar tudo do zero." },
-      { property: "og:image", content: "https://i.postimg.cc/BZwVkcCb/img-produto.png" },
-    ],
-  }),
-  component: Index,
-});
 
 const SEQ_IMAGES = [
   "https://i.postimg.cc/fbKHKxbq/vu-NJnn9664695.webp",
@@ -52,7 +38,7 @@ function formatDateBR(d: Date) {
   return `${dd}/${mm}/${yy}`;
 }
 
-function Index() {
+export default function Index() {
   const [today, setToday] = useState("");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [showUpsell, setShowUpsell] = useState(false);
