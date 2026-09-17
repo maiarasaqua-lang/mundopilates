@@ -80,7 +80,7 @@ export default function Index() {
                 Leve o <strong className="text-foreground">Plano Completo</strong> com <strong className="text-foreground">todos os bônus</strong> por um valor exclusivo, só liberado agora:
               </p>
               <div className="mt-5">
-                <p className="text-sm text-muted-foreground line-through">De R$ 27,90</p>
+                <p className="text-sm text-muted-foreground line-through">De R$ 29,90</p>
                 <p className="mt-1 text-5xl font-extrabold tracking-tight text-primary">R$ 19,90</p>
               </div>
               <ul className="mt-5 space-y-2 text-left text-sm mx-auto max-w-sm">
